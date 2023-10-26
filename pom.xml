@@ -60,11 +60,6 @@
 			<artifactId>mockito-junit-jupiter</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>usc</groupId>
-			<artifactId>HibernateDemo</artifactId>
-			<version>0.01-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 
 	<build>
