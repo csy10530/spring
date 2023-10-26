@@ -43,6 +43,11 @@ public class UserController {
     return userService.register(user);
   }
 
+  @PostMapping("/admin")
+  public Response addAdmin(@RequestBody User user) {
+    return userService.registerAdm(user);
+  }
+
   @PreAuthorize("hasAnyAuthority('ROLE_ADMIN', 'ROLE_USER')")
   @PutMapping
   public Response changeUser(@RequestBody User user, Authentication authentication) {
